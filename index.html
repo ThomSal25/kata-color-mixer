@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Color Mixer</title>
+    <meta name="author" content="Thomas Salmann">
+    <meta name="description" content="Kata Color Mixer">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="scale">
+            <div class="scale">
+                <p>r</p>
+                <input type="range" id="red" min="0" max="255" value="0">
+            </div>
+            <div class="scale">
+                <p>g</p>
+                <input type="range" id="green" min="0" max="255" value="0">
+            </div>
+            <div class="scale">
+                <p>b</p>
+                <input type="range" id="blue" min="0" max="255" value="0">
+            </div>
+        </div>
+                <p>RGB (<span id="red-value"></span>,
+                    <span id="green-value"></span>,
+                    <span id="blue-value"></span>)
+                </p>
+        <button>Random Color</button>
+    </header>
+    <main class="main"></main>
+    <script src="script.js"></script>
+</body>
+
+</html>
